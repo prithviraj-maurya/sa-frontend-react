@@ -1,12 +1,15 @@
 import './Grid.css';
 
-function Grid(props: any) {
+export default function Grid(props: any) {
+    let openEditForm = (item: any) => {
+        props.openForm(item);
+    }
     return (
         <main className="grid">
             {
                 props.data.map((ele: any, i: number) => {
                     return (
-                        <article key={ele.id} className="card">
+                        <article key={ele.id} className="card" onClick={() => openEditForm(ele)}>
                             <div className="text">
                                 <h3>{ele.name}</h3>
                                 <p>Code: {ele.code}</p>
@@ -22,5 +25,3 @@ function Grid(props: any) {
         </main>
     );
 }
-
-export default Grid;
