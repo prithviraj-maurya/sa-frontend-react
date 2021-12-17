@@ -38,8 +38,7 @@ class Filters extends React.Component<any> {
                 <div className="dropdown">
                     <button className="dropbtn">
                         {this.state.selected}<i className='fa fa-caret'></i>
-                    </button> <br />
-                    <button type="button" onClick={() => this.clearFilters()}>Clear Selection</button>
+                    </button>
                     <div className="dropdown-content">
                         {this.props.cities.map((el: string, i: number) => {
                             return (<div key={i}>
@@ -48,6 +47,7 @@ class Filters extends React.Component<any> {
                             </div>)
                         })}
                     </div>
+                    <button type="button" onClick={() => this.clearFilters()}>Clear Selection</button>
                 </div>
             </div>
         );

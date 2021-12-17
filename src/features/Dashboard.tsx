@@ -55,12 +55,16 @@ class Dashboard extends React.Component {
     }
 
     submitData = (item: any) => {
+        let newData: any[] = [];
         data.forEach((el: any) => {
             if (el.id === item.id) {
-                el = item;
+                newData.push(item);
+            } else {
+                newData.push(el);
             }
         });
-        console.log(data);
+        console.log(newData);
+        this.setState({ orgData: newData });
         this.closeForm();
     }
 

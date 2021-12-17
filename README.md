@@ -1,3 +1,14 @@
+Features:
+
+* Application to check all details of warehouse and edit them.
+* Stack used is React + Redux + TS (no external libraries used)
+* User can filter by warehouse name or cluster name or select the city by hovering over the button and clicking on the option
+* User can click on the warehouse details card to open the edit screen with all form fields
+* On submitting the form the details will be updated on the dashboard
+
+![](task-gif.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

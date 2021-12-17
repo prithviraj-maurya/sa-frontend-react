@@ -1,7 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import warehouse from '../features/warehouse/Warehouse';
 
 export const store = configureStore({
   reducer: {
+    warehouse: warehouse
   },
 });
 
